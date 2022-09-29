@@ -10,12 +10,12 @@ import Socials from "./components/Socials";
 
 export default function App() {
   return (
-    <main className="text-gray-400 dark:bg-background_main body-font">
+    <main className="text-gray-400 bg-background_about body-font">
       <Navbar />
       <About />
       <Projects />
-      <Skills />
       <Volunteering />
+      <Skills />
       <Socials />
     </main>
   );
