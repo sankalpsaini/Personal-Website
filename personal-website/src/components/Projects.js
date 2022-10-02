@@ -26,7 +26,7 @@ export default function Projects() {
               key={project.image}
               rel="noopener noreferrer"
               target="_blank"
-              className="flex w-1/2 h-[250px] p-4">
+              className="sm:w-1/2 w-full h-[250px] p-4">
               <div className="flex relative">
                 <img
                   alt="gallery"
