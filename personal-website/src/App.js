@@ -6,7 +6,6 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Volunteering from "./components/Volunteering";
-import Socials from "./components/Socials";
 
 export default function App() {
   return (
@@ -16,7 +15,6 @@ export default function App() {
       <Projects />
       <Volunteering />
       <Skills />
-      <Socials />
       <p className="text-gray-400 bg-background_main text-center body-font -m-10">
         © 2022 Sankalp Saini All Rights Reserved
       </p>

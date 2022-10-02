@@ -76,6 +76,13 @@ export default function Navbar() {
                     fgColor="2D283E" 
                     style={{ height: 40, width: 40 }}
                 />
+                <SocialIcon 
+                    className="cursor-pointer inline-flex items-center py-1 px-3 focus:outline-none text-base mx-1"
+                    url="https://github.com/sankalpsaini" 
+                    bgColor="#b45309" 
+                    fgColor="2D283E" 
+                    style={{ height: 40, width: 40 }}
+                />
                 </nav>
 
                 {/* Email Me Link */}

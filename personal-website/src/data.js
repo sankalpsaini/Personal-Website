@@ -5,7 +5,7 @@ export const projects = [
       title: "SitDown",
       subtitle: "Flutter and Firebase",
       description:
-        "COVID-19 Hybrid Workplace Companion Application",
+        "COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing",
       image: "./sitDown.png",
       link: "https://devpost.com/software/sitdown-hbjvmp",
     },
@@ -13,7 +13,7 @@ export const projects = [
       title: "QRGo",
       subtitle: "Java",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        "Android Application created in CMPUT 301. Users navigate their way to QRCodes and scan them to score points and compete with other players",
       image: "./qrgo.png",
       link: "https://github.com/CMPUT301W22T28/QRGo",
     },
@@ -21,7 +21,7 @@ export const projects = [
         title: "AlbertaSat",
         subtitle: "React and Python",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+          "Member of the Ground Station Software Team with contributions on a web-based application. Also created, and published blog posts",
         image: "./albertaSat.png",
         
         link: "https://albertasat.ca",
@@ -30,7 +30,7 @@ export const projects = [
       title: "Portfolio Website",
       subtitle: "Web Development using React",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume",
       image: "./portfolio-clipart.png",
       link: "https://github.com/sankalpsaini/Personal-Website",
     },
@@ -38,7 +38,7 @@ export const projects = [
       title: "Gmail Scraper",
       subtitle: "Python",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        "Simple application that allows users to check number of unread emails. Ideal for people that would not like to continuously open work/school email accounts",
       image: "./gmail.png",
       link: "https://github.com/sankalpsaini/Gmail-Notification-Scraper"
     },
@@ -46,7 +46,7 @@ export const projects = [
       title: "Coda Connection",
       subtitle: "Coda Document",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        "A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'",
       image: "./coda.png",
       link: "https://devpost.com/software/connection-ya2mb7"
     },
