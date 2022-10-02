@@ -17,6 +17,9 @@ export default function App() {
       <Volunteering />
       <Skills />
       <Socials />
+      <p className="text-gray-400 bg-background_main text-center body-font -m-10">
+        © 2022 Sankalp Saini All Rights Reserved
+      </p>
     </main>
   );
 }

@@ -15,7 +15,8 @@ export default function Projects() {
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             These are projects that I have completed during hackathons, classes, 
-            and personal projects. 
+            and personal projects. They helped me learn new languages and tone previously 
+            existing skills. Hover over some of the projects to get more information!
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -25,7 +26,7 @@ export default function Projects() {
               key={project.image}
               rel="noopener noreferrer"
               target="_blank"
-              className="sm:w-1/2 w-100 p-4">
+              className="flex w-1/2 h-[250px] p-4">
               <div className="flex relative">
                 <img
                   alt="gallery"

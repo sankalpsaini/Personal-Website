@@ -5,7 +5,7 @@ export const projects = [
       title: "SitDown",
       subtitle: "Flutter and Firebase",
       description:
-        "Lorem ipsum dola sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        "COVID-19 Hybrid Workplace Companion Application",
       image: "./sitDown.png",
       link: "https://devpost.com/software/sitdown-hbjvmp",
     },
@@ -88,11 +88,62 @@ export const volunteering = [
   },
 ];
 
-export const skills = [
+export const familiarSkills = [
   {
-    skill: "Python"
+    name: "Python"
   },
   {
-    skill: "Java"
+    name: "Java"
   },
+  {
+    name: "C/C++"
+  },
+  // {
+  //   name: "VisualBasic"
+  // },
+  {
+    name: "HTML/CSS/Javascript"
+  },
+  {
+    name: "React"
+  },
+  {
+    name: "Linux/Ubuntu"
+  },
+  // {
+  //   name: "GitHub/GitLab"
+  // },
 ];
+
+export const learningSkills = [
+  {
+    name: "PHP"
+  },
+  {
+    name: "Swift"
+  },
+  {
+    name: "Ansible"
+  },
+]
+
+export const softSkills = [
+  {
+    name: "Quick Learner"
+  },
+  {
+    name: "Creativity"
+  },
+  {
+    name: "Flexibility"
+  },
+  {
+    name: "Strong Team Player"
+  },
+  {
+    name: "Communication"
+  },
+  {
+    name: "Time Management"
+  },
+]

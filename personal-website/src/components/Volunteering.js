@@ -14,9 +14,10 @@ export default function Volunteering() {
                         Here are some of my Community Involvement Projects!
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                        facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                        fuga dolore.
+                        Other than school and work experience, I enjoy stepping outside of my comfort zone 
+                        and participating in non-computing science events and volunteering groups. 
+                        I believe that by branching out, I am able to have experiences that I may not otherwise 
+                        have; which will also help shape who I am! 
                     </p>
                 </div>
 
@@ -27,7 +28,7 @@ export default function Volunteering() {
                         key={volunteer.image}
                         rel="noopener noreferrer"
                         target="_blank"
-                        className="sm:w-1/4 w-full p-5">
+                        className="sm:w-1/4 w-full h-[300px] p-5">
                         <div className="flex relative">
                             <img
                                 alt="gallery"

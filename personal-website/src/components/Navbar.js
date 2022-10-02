@@ -2,7 +2,9 @@
 
 import { MailIcon } from "@heroicons/react/solid";
 import { Link } from 'react-scroll'
-//const ScrollLink = Scroll.ScrollLink;
+import { SocialIcon } from 'react-social-icons';
+// ReactDOM.render(<SocialIcon url="https://twitter.com/jaketrent" />, document.body);
+
 
 export default function Navbar() {
 
@@ -18,9 +20,6 @@ export default function Navbar() {
                         className="ml-3 text-3xl cursor-pointer">
                     Sankalp Saini
                     </Link>
-                    {/* <a href="#about" className="ml-3 text-xl">
-                        Sankalp Saini
-                    </a> */}
                 </nav>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
                     <Link 
@@ -51,21 +50,42 @@ export default function Navbar() {
                         Skills
                     </Link>
                 </nav>
-                <Link 
-                    to="contact" 
-                    spy={true} 
-                    smooth={true} 
-                    duration={500}
-                    className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+
+                {/* Social Icons */}
+
+                <nav>
+                {/* className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center"> */}
+                <SocialIcon 
+                    className="cursor-pointer inline-flex items-center py-1 px-3 focus:outline-none text-base mx-1"
+                    url="https://www.instagram.com/s.saini6/" 
+                    bgColor="#b45309" 
+                    fgColor="2D283E" 
+                    style={{ height: 40, width: 40 }}
+                />
+                <SocialIcon 
+                    className="cursor-pointer inline-flex items-center py-1 px-3 focus:outline-none text-base mx-1"
+                    url="https://twitter.com/sankalp_saini" 
+                    bgColor="#b45309" 
+                    fgColor="2D283E" 
+                    style={{ height: 40, width: 40 }}
+                />
+                <SocialIcon 
+                    className="cursor-pointer inline-flex items-center py-1 px-3 focus:outline-none text-base mx-1"
+                    url="https://www.linkedin.com/in/sankalp-saini/" 
+                    bgColor="#b45309" 
+                    fgColor="2D283E" 
+                    style={{ height: 40, width: 40 }}
+                />
+                </nav>
+
+                {/* Email Me Link */}
+
+                <a
+                    href="mailto:sankalpsaini6@gmail.com"
+                    className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
                     Contact Me
                     <MailIcon className="w-4 h-4 ml-1" />
-                </Link>
-                {/* <a
-                    href="#contact"
-                    className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-                    Hire Me
-                    <ArrowRightIcon className="w-4 h-4 ml-1" />
-                </a> */}
+                </a>
             </div>
         </header>
     )
