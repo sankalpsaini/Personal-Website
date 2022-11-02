@@ -28,7 +28,7 @@ export const projects = [
       },
     {
       title: "Portfolio Website",
-      subtitle: "Web Development using React",
+      subtitle: "HTML/CSS using React Native and Tailwind CSS",
       description:
         "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume",
       image: "./portfolio-clipart.png",

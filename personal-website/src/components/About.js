@@ -23,9 +23,9 @@ export default function About() {
                         University of Alberta Computing Science Fall 2023
                     </h2>
                     <p className="mb-8 leading-relaxed text-gray-350">
-                        Welcome to my personal portfolio! As you can see above, I hope to graduate after the fall semester of 2023. 
-                        I have worked two internships at <b>MuniSoft</b>, a financial technology software company, based in Regina, Saskatchewan. In addition to this, 
-                        I am currently working my third internship at <b>Shared Services Canada</b> in Edmonton, Alberta. During this current internship, I am 
+                        Welcome to my personal portfolio that I made myself, <em>from scratch</em>! As you can see above, I hope to graduate after the fall semester of 2023. 
+                        I have worked two internships at <strong>MuniSoft</strong> , a financial technology software company, based in Regina, Saskatchewan. In addition to this, 
+                        I am currently working my third internship at <strong>Shared Services Canada</strong> in Edmonton, Alberta. During this current internship, I am 
                         continuing to complete university courses for my expected graduation. 
                         <br></br>
                         <br></br>
@@ -36,7 +36,7 @@ export default function About() {
                     <div className="flex justify-center">
                         {/* <a href="mailto:sankalpsaini6@gmail.com" */}
                         <a href="https://drive.google.com/file/d/1j-UVyC972YBQ4yj8Hv2s83G4B8ciksgo/view?usp=sharing"
-                            className="inline-flex text-white bg-orange-700 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
+                            className="hover:animate-pulse inline-flex text-white bg-orange-700 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
                             Check out my Resume
                         </a>
                         {/* <Link 
