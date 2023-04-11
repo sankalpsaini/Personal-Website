@@ -7,5 +7,5 @@ Laptop Coding icon by "https://icons8.com"
 
 
 # To run on development server
-cd into personal-website
-npm start
+- `cd personal-website`
+- `npm start`
