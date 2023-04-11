@@ -35,8 +35,8 @@ export default function About() {
                     </p>
                     <div className="flex justify-center">
                         {/* <a href="mailto:sankalpsaini6@gmail.com" */}
-                        <a href="https://drive.google.com/file/d/1j-UVyC972YBQ4yj8Hv2s83G4B8ciksgo/view?usp=sharing"
-                            className="hover:animate-pulse inline-flex text-white bg-orange-700 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
+                        <a href="https://drive.google.com/file/d/1YGfvWsDh_PRq-_wnwpl26TDXQeDcWXf4/view?usp=sharing" rel="noopener"
+                            className="hover:animate-pulse-slow inline-flex text-white bg-orange-700 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
                             Check out my Resume
                         </a>
                         {/* <Link 

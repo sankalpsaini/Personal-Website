@@ -20,18 +20,21 @@ export default function Projects() {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             These are projects that I have completed during hackathons, classes, 
             and personal projects. They helped me learn new languages and tone previously 
-            existing skills. Hover over some of the projects to get more information!
+            existing skills. Hover over some of the projects to get more information! Find other projects
+            on my GitHub!
           </p>
         </div>
-        <AnimationOnScroll animateIn="animate__fadeIn" duration={4}>
-          <div className="flex flex-wrap -m-4">
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={4}>
+          {/* <div className="flex flex-wrap -m-4"> */}
+          <div className="grid grid-cols-2 gap-4">
             {projects.map((project) => (
               <a 
                 href={project.link}
                 key={project.image}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="sm:w-1/2 w-full h-[250px] p-4">
+                // className="h-[250px] p-4">
+                className="w-full h-[270px] p-4">
                 <div className="flex relative hover:animate-pulse-slow">
                   <img
                     alt="gallery"

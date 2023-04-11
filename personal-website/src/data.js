@@ -2,7 +2,7 @@
 
 export const projects = [
     {
-      title: "SitDown",
+      title: "SitDown - Hack the North",
       subtitle: "Flutter and Firebase",
       description:
         "COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing",
@@ -43,13 +43,21 @@ export const projects = [
       link: "https://github.com/sankalpsaini/Gmail-Notification-Scraper"
     },
     {
-      title: "Coda Connection",
+      title: "Coda Connection - Hack the North",
       subtitle: "Coda Document",
       description:
         "A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'",
       image: "./coda.png",
       link: "https://devpost.com/software/connection-ya2mb7"
     },
+    {
+      title: "Gleanr - Morgan Stanley Code to Give",
+      subtitle: "React, Next.js, Tailwind CSS, mongoDB",
+      description:
+        "Second place winning web application that offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
+      image: "./gleanrlogo.png",
+      link: "https://devpost.com/software/connection-ya2mb7"
+    }
   ];
 
 export const volunteering = [

@@ -1,6 +1,7 @@
 // src/components/Navbar.js
 
 import { MailIcon } from "@heroicons/react/solid";
+import { NavLink, Outlet } from "react-router-dom";
 import { Link } from 'react-scroll'
 import { SocialIcon } from 'react-social-icons';
 // ReactDOM.render(<SocialIcon url="https://twitter.com/jaketrent" />, document.body);
@@ -49,6 +50,11 @@ export default function Navbar() {
 
                         Skills
                     </Link>
+                    <NavLink
+                        to="/compiler"
+                        className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+                            Compiler
+                    </NavLink>
                 </nav>
 
                 {/* Social Icons */}
@@ -94,6 +100,7 @@ export default function Navbar() {
                     <MailIcon className="w-4 h-4 ml-1" />
                 </a>
             </div>
+            <Outlet />
         </header>
     )
 }
