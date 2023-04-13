@@ -1,11 +1,20 @@
 # Personal-Website
-This is my own personal portfolio website that I am creating in React
+This is my own personal portfolio website that I am creating in React. 
 
-# Credits
-Portfolio Image: https://www.kindpng.com/imgv/ioRhbmb_marketing-clipart-investment-portfolio-portfolio-management-png-free/
-Laptop Coding icon by "https://icons8.com"
+<br><br>Features include: About Page, Projects, Volunteering, Skills
+<br><br>Upcoming Features: Shell/Python Console to allow the running of personal scripts, web gaming application
 
+## Languages/Frameworks Used
+- React (router, animation-on-scroll, scroll, typewriter-effect, social-icons)
+- Tailwind CSS
+- Trinket.io
 
-# To run on development server
+## Credits
+- Base Layout Template: https://www.freecodecamp.org/news/build-portfolio-website-react/
+- Portfolio Image: https://www.kindpng.com/imgv/ioRhbmb_marketing-clipart-investment-portfolio-portfolio-management-png-free/
+- Laptop Coding icon: https://icons8.com
+- Icons: https://heroicons.com/
+
+## To run on development server
 - `cd personal-website`
 - `npm start`
