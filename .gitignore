@@ -1,2 +1,4 @@
 # Local Netlify folder
 .netlify
+node_modules/
+Python-3.6.15

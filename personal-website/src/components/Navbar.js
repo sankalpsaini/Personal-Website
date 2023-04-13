@@ -4,25 +4,100 @@ import { MailIcon } from "@heroicons/react/solid";
 import { NavLink, Outlet } from "react-router-dom";
 import { Link } from 'react-scroll'
 import { SocialIcon } from 'react-social-icons';
+import locationDetection from "../tools/locationDetection";
 // ReactDOM.render(<SocialIcon url="https://twitter.com/jaketrent" />, document.body);
 
 
 export default function Navbar() {
 
+    let titleLink;
+    let navbarButtons;
+
+    console.log("LOCATION: " + locationDetection());
+
+    if (locationDetection() === "home") {
+        titleLink = 
+            <nav className="title-font font-medium text-white mb-4 md:mb-0">
+                <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="ml-3 text-3xl cursor-pointer">
+                    Sankalp Saini
+                </Link>
+            </nav>
+        
+        navbarButtons =
+        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+            <Link 
+                to="projects" 
+                spy={true} 
+                smooth={true} 
+                duration={500}
+                className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+
+                Projects
+            </Link>
+            <Link 
+                to="volunteering" 
+                spy={true} 
+                smooth={true} 
+                duration={500}
+                className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+
+                Volunteering
+            </Link>
+            <Link 
+                to="skills" 
+                spy={true} 
+                smooth={true} 
+                duration={500}
+                className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+
+                Skills
+            </Link>
+            <NavLink
+                to="/compiler"
+                className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+                    Script Compiler
+            </NavLink>
+        </nav>
+
+    }
+    else {
+        titleLink = 
+            <nav className="title-font font-medium text-white mb-4 md:mb-0">
+                <NavLink
+                    to="/"
+                    className="ml-3 text-3xl cursor-pointer">
+                    Sankalp Saini
+                </NavLink>
+            </nav>
+
+        navbarButtons =
+        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+            <NavLink 
+                to="/" 
+                className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+
+                Home
+            </NavLink>
+            <NavLink
+                to="/compiler"
+                className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+                    Script Compiler
+            </NavLink>
+        </nav>
+    }
+
+
     return (
         <header className="bg-gray-800 md:sticky top-0 z-10">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <nav className="title-font font-medium text-white mb-4 md:mb-0">
-                    <Link
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                        className="ml-3 text-3xl cursor-pointer">
-                    Sankalp Saini
-                    </Link>
-                </nav>
-                <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+                {titleLink}
+                {navbarButtons}
+                {/* <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
                     <Link 
                         to="projects" 
                         spy={true} 
@@ -53,9 +128,9 @@ export default function Navbar() {
                     <NavLink
                         to="/compiler"
                         className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
-                            Compiler
+                            Script Compiler
                     </NavLink>
-                </nav>
+                </nav> */}
 
                 {/* Social Icons */}
 

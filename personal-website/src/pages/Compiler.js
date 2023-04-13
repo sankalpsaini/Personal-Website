@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Compiler.css";
 import Navbar from "../components/Navbar";
 
 export default class Compiler extends Component {
@@ -99,71 +98,20 @@ export default class Compiler extends Component {
                 <Navbar />
             </div>
 
+
+            {/* This is the compiler brought in from trinket.io */}
             <iframe 
-                // className=""
-                src="https://trinket.io/embed/python3/69c2d4fb55"
+                title="Password Generator"
+                className="absolute inset-0 pt-20"
+                src="https://trinket.io/embed/python/e8642e0291"
                 width="100%" 
-                height="700"
+                height="100%"
                 frameborder="0" 
                 marginwidth="0" 
                 marginheight="0" 
-                allowfullscreen
+                allowfullscreen=""
             />
 
-            {/* <div className="row container-fluid">
-            <div className="col-6 ml-4 ">
-                <label htmlFor="solution ">
-                <span className="badge badge-info heading mt-2 ">
-                    <i className="fas fa-code fa-fw fa-lg"></i> Code Here
-                </span>
-                </label>
-                <textarea
-                required
-                name="solution"
-                id="source"
-                onChange={this.input}
-                className=" source"
-                value={this.state.input}
-                ></textarea>
-                <button
-                type="submit"
-                className="btn btn-danger ml-2 mr-2 "
-                onClick={this.submit}
-                >
-                <i className="fas fa-cog fa-fw"></i> Run
-                </button>
-
-                <label htmlFor="tags" className="mr-1">
-                <b className="heading">Language:</b>
-                </label>
-                <select
-                value={this.state.language_id}
-                onChange={this.language}
-                id="tags"
-                className="form-control form-inline mb-2 language"
-                >
-                <option value="54">C++</option>
-                <option value="50">C</option>
-                <option value="62">Java</option>
-                <option value="71">Python</option>
-                </select>
-            </div>
-            <div className="col-5">
-                <div>
-                <span className="badge badge-info heading my-2 ">
-                    <i className="fas fa-exclamation fa-fw fa-md"></i> Output
-                </span>
-                <textarea id="output"></textarea>
-                </div>
-            </div>
-            </div>
-            <div className="mt-2 ml-5">
-            <span className="badge badge-primary heading my-2 ">
-                <i className="fas fa-user fa-fw fa-md"></i> User Input
-            </span>
-            <br />
-            <textarea id="input" onChange={this.userInput}></textarea>
-            </div> */}
         </>
         );
     }
