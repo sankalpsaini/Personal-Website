@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'pulse-slow': 'pulse 1s linear 3',
+        'pulse-slow': 'pulse 1s linear 1',
       },
       colors: {
         'background_main': '#2D283E',

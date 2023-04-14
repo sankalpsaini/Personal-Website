@@ -1,9 +1,11 @@
 // src/data.js
 
+// All project images use 1600px x 900px
+
 export const projects = [
     {
-      title: "SitDown",
-      subtitle: "Flutter and Firebase",
+      title: "SitDown - Hack the North",
+      subtitle: "Flutter/Firebase",
       description:
         "COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing",
       image: "./sitDown.png",
@@ -19,7 +21,7 @@ export const projects = [
     },
     {
         title: "AlbertaSat",
-        subtitle: "React and Python",
+        subtitle: "React/Python",
         description:
           "Member of the Ground Station Software Team with contributions on a web-based application. Also created, and published blog posts",
         image: "./albertaSat.png",
@@ -28,28 +30,36 @@ export const projects = [
       },
     {
       title: "Portfolio Website",
-      subtitle: "HTML/CSS using React Native and Tailwind CSS",
+      subtitle: "HTML/CSS/ReactJS",
       description:
         "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume",
       image: "./portfolio-clipart.png",
       link: "https://github.com/sankalpsaini/Personal-Website",
     },
+    // {
+    //   title: "Gmail Scraper",
+    //   subtitle: "Python",
+    //   description:
+    //     "Simple application that allows users to check number of unread emails. Ideal for people that would not like to continuously open work/school email accounts",
+    //   image: "./gmail.png",
+    //   link: "https://github.com/sankalpsaini/Gmail-Notification-Scraper"
+    // },
     {
-      title: "Gmail Scraper",
-      subtitle: "Python",
-      description:
-        "Simple application that allows users to check number of unread emails. Ideal for people that would not like to continuously open work/school email accounts",
-      image: "./gmail.png",
-      link: "https://github.com/sankalpsaini/Gmail-Notification-Scraper"
-    },
-    {
-      title: "Coda Connection",
+      title: "Coda Connection - Hack the North",
       subtitle: "Coda Document",
       description:
         "A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'",
       image: "./coda.png",
       link: "https://devpost.com/software/connection-ya2mb7"
     },
+    {
+      title: "Gleanr - Morgan Stanley Code to Give",
+      subtitle: "React/Next.js/mongoDB",
+      description:
+        "Second place winning web application that offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
+      image: "./gleanrlogo.png",
+      link: "https://github.com/rajagoat/earth-day-c2g"
+    }
   ];
 
 export const volunteering = [
