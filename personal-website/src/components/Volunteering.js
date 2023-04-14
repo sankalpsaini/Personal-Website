@@ -24,7 +24,7 @@ export default function Volunteering() {
                         have; which will also help shape who I am! 
                     </p>
                 </div>
-                <AnimationOnScroll animateIn="animate__fadeInUp" duration={2}>
+                {/* <AnimationOnScroll animateIn="animate__fadeInUp" duration={2}> */}
                     <div className="flex flex-wrap -m-4">
                         {volunteering.map((volunteer) => (
                             <a 
@@ -52,7 +52,7 @@ export default function Volunteering() {
                             </a>
                         ))}
                     </div>
-                </AnimationOnScroll>
+                {/* </AnimationOnScroll> */}
             </div>
         </section>
     );

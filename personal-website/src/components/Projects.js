@@ -24,7 +24,7 @@ export default function Projects() {
             on my GitHub!
           </p>
         </div>
-        <AnimationOnScroll animateIn="animate__fadeInUp" duration={4}>
+        {/* <AnimationOnScroll animateIn="animate__fadeInUp" duration={4}> */}
           {/* <div className="flex flex-wrap -m-4"> */}
           <div className="grid grid-cols-2 gap-4">
             {projects.map((project) => (
@@ -33,8 +33,7 @@ export default function Projects() {
                 key={project.image}
                 rel="noopener noreferrer"
                 target="_blank"
-                // className="h-[250px] p-4">
-                className="w-full h-[270px] p-4">
+                className="w-full h-full py-4 px-2">
                 <div className="flex relative hover:animate-pulse-slow">
                   <img
                     alt="gallery"
@@ -54,7 +53,7 @@ export default function Projects() {
               </a>
             ))}
           </div>
-        </AnimationOnScroll>
+        {/* </AnimationOnScroll> */}
       </div>
     </section>
   );
