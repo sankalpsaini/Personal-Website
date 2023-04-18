@@ -5,7 +5,7 @@ This is my own personal portfolio website that I am creating in React.
 <br><br>Upcoming Features: Shell/Python Console to allow the running of personal scripts, web gaming application
 
 ## Languages/Frameworks Used
-- React (router, animation-on-scroll, scroll, typewriter-effect, social-icons)
+- React (router, animation-on-scroll, scroll, typewriter-effect, social-icons, material-ui)
 - Tailwind CSS
 - Trinket.io
 
