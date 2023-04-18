@@ -1,16 +1,76 @@
 // src/components/Projects.js
 
-import { DesktopComputerIcon } from "@heroicons/react/solid";
 import React from "react";
+
 import { projects } from "../data";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import ScreenDetection from "../tools/screenDetection";
+
 import "animate.css/animate.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import { DesktopComputerIcon } from "@heroicons/react/solid";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import { CardActionArea } from '@mui/material';
+
+var Carousel = require('react-responsive-carousel').Carousel;
 
 export default function Projects() {
+
+  let projectList;
+
+  if (ScreenDetection() === false) {
+    projectList =
+      <div className="grid grid-cols-2 gap-6 pt-10">
+        {projects.map((project) => (
+          <Card sx={{ width: 1, height: 250 }}>
+            <CardActionArea>
+              <CardMedia
+                sx={{ 
+                  height: 250,
+                  ':hover': {
+                    borderRadius: "20px", // theme.shadows[20]
+                  },
+                }}
+                image={project.image}
+                title={project.title}
+              />
+            </CardActionArea>
+          </Card>
+        ))}
+      </div>
+  } else {
+    console.log("MOBILE HERE")
+    projectList = 
+      <div className="pt-10">
+        <Carousel 
+          autoPlay={true}
+          infiniteLoop={true}
+          showStatus={false}
+          >
+          {projects.map(project => (
+              <a 
+                href={project.link}
+                key={project.image}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <p className="font-bold text-orange-700 text-lg">{project.title}</p>
+                <p className="font-bold text-sm pb-1">{project.subtitle}</p>
+                <div className="flex relative">
+                  <img src={project.image} alt={project.title} />
+                </div>
+              </a>
+          ))}
+        </Carousel>
+      </div>
+  }
+
   return (
     <section id="projects" className="text-gray-400 bg-background_main body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
+        <div className="flex flex-col w-full">
           <AnimationOnScroll initiallyVisible={false} animateIn={"animate__flip"}>
             <DesktopComputerIcon className="mx-auto inline-block w-10 mb-4" />
           </AnimationOnScroll>
@@ -20,13 +80,16 @@ export default function Projects() {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             These are projects that I have completed during hackathons, classes, 
             and personal projects. They helped me learn new languages and tone previously 
-            existing skills. Hover over some of the projects to get more information! Find other projects
+            existing skills. Click on them to access the project! Find other projects
             on my GitHub!
           </p>
         </div>
-        {/* <AnimationOnScroll animateIn="animate__fadeInUp" duration={4}> */}
-          {/* <div className="flex flex-wrap -m-4"> */}
-          <div className="grid grid-cols-2 gap-4">
+        
+        <div>
+          {projectList}
+        </div>
+
+          {/* <div className="grid grid-cols-2 gap-6">
             {projects.map((project) => (
               <a 
                 href={project.link}
@@ -52,8 +115,7 @@ export default function Projects() {
                 </div>
               </a>
             ))}
-          </div>
-        {/* </AnimationOnScroll> */}
+          </div> */}
       </div>
     </section>
   );

@@ -84,7 +84,7 @@ export const volunteering = [
       subtitle: "2019/2021",
       description:
         "UAlberta Week of Welcome Faculty Leader",
-      image: "./uasu.jpg",
+      image: "./uasu.png",
       
       link: "https://www.su.ualberta.ca/events/wow/",
     },

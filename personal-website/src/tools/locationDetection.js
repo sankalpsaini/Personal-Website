@@ -1,5 +1,3 @@
-import React from 'react';
-
 function locationDetection() {
   const path = window.location.pathname;
 
