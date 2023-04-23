@@ -5,6 +5,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { Link } from 'react-scroll'
 import { SocialIcon } from 'react-social-icons';
 import locationDetection from "../tools/locationDetection";
+import ScreenDetection from "../tools/screenDetection";
 // ReactDOM.render(<SocialIcon url="https://twitter.com/jaketrent" />, document.body);
 
 
@@ -12,10 +13,19 @@ export default function Navbar() {
 
     let titleLink;
     let navbarButtons;
+    let mobileCompilerAddition;
 
     console.log("LOCATION: " + locationDetection());
 
     if (locationDetection() === "home") {
+        if (ScreenDetection() === false) {
+            mobileCompilerAddition =
+                <NavLink
+                    to="/compiler"
+                    className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+                        Script Compiler
+                </NavLink>
+        }
         titleLink = 
             <nav className="title-font font-medium text-white mb-4 md:mb-0">
                 <Link
@@ -57,11 +67,7 @@ export default function Navbar() {
 
                 Skills
             </Link>
-            <NavLink
-                to="/compiler"
-                className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
-                    Script Compiler
-            </NavLink>
+            {mobileCompilerAddition}
         </nav>
 
     }

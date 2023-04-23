@@ -15,7 +15,7 @@ export default function About() {
     if (ScreenDetection() === true) {
         mobileMessage =
         <div>
-            <Alert severity="info">This site would look a lot better on a Desktop, trust me :)</Alert>
+            <Alert severity="info">This would look a lot better on a Desktop.<br></br><br></br>It'll give you access to my script compiler page!</Alert>
             <br></br>
         </div>
     } else {

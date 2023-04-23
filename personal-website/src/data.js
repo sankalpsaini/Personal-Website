@@ -4,10 +4,10 @@
 
 export const projects = [
     {
-      title: "SitDown - Hack the North",
+      title: "SitDown",
       subtitle: "Flutter/Firebase",
       description:
-        "COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing",
+        "This was a Hack the North project! A COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing",
       image: "./sitDown.png",
       link: "https://devpost.com/software/sitdown-hbjvmp",
     },
@@ -45,20 +45,28 @@ export const projects = [
     //   link: "https://github.com/sankalpsaini/Gmail-Notification-Scraper"
     // },
     {
-      title: "Coda Connection - Hack the North",
+      title: "Coda Connection",
       subtitle: "Coda Document",
       description:
-        "A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'",
+        "This was a Hack the North project! A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'",
       image: "./coda.png",
       link: "https://devpost.com/software/connection-ya2mb7"
     },
     {
-      title: "Gleanr - Morgan Stanley Code to Give",
+      title: "Gleanr",
       subtitle: "React/Next.js/mongoDB",
       description:
-        "Second place winning web application that offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
+        "This was a Morgan Stanley Code to Give winning project! Offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
       image: "./gleanrlogo.png",
       link: "https://github.com/rajagoat/earth-day-c2g"
+    },
+    {
+      title: "Social Distribution",
+      subtitle: "React/Django REST/PostGreSQL",
+      description:
+        "A CMPUT404 project that was essentially a social networking site where users could make accounts and posts allowing other users/servers to view/interact",
+      image: "./socialDist.png",
+      link: "https://github.com/kbricker8/cmput404-group-project"
     }
   ];
 

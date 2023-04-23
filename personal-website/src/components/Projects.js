@@ -1,6 +1,6 @@
 // src/components/Projects.js
 
-import React from "react";
+import React, {useState} from "react";
 
 import { projects } from "../data";
 import ScreenDetection from "../tools/screenDetection";
@@ -12,30 +12,98 @@ import { DesktopComputerIcon } from "@heroicons/react/solid";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
+import Typography from "@mui/material/Typography";
 import { CardActionArea } from '@mui/material';
 
 var Carousel = require('react-responsive-carousel').Carousel;
 
 export default function Projects() {
 
+  const [isHoveredId, setIsHoveredId] = useState( '' );
   let projectList;
+
+  function handleMouseOver( ID ) {
+    return () => {
+      setIsHoveredId( ID );
+    }
+  }
+
+  function handleMouseOut() {
+    setIsHoveredId( '' );
+  }
+
+  const styles = {
+    overlayHeader: {
+      position: 'absolute',
+      top: '50px',
+      left: '20px',
+      color: 'white',
+      textAlign: 'right',
+    },
+    overlaySubtitle: {
+      position: 'absolute',
+      top: '20px',
+      left: '20px',
+      color: '#c2410c',
+    },
+    overlayBody: {
+      position: 'absolute',
+      top: '120px',
+      left: '20px',
+      right: '20px',
+      color: '#a8a29e',
+    }
+  }
 
   if (ScreenDetection() === false) {
     projectList =
       <div className="grid grid-cols-2 gap-6 pt-10">
         {projects.map((project) => (
           <Card sx={{ width: 1, height: 250 }}>
-            <CardActionArea>
-              <CardMedia
-                sx={{ 
-                  height: 250,
-                  ':hover': {
-                    borderRadius: "20px", // theme.shadows[20]
-                  },
-                }}
-                image={project.image}
-                title={project.title}
-              />
+            <CardActionArea
+              onMouseOver={ handleMouseOver(project.title) }
+              onMouseOut={ handleMouseOut }
+              href={project.link}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              { isHoveredId === project.title ?
+                <div>
+                  <CardMedia
+                    sx={{
+                      height: 250,
+                      // paddingTop: '56.25%'
+                    }}
+                    image={project.image}
+                    title={project.title}
+                    className="filter opacity-75 brightness-0"
+                  />
+                  {/* <CardHeader
+                    style={styles.overlayHeader}
+                    title={project.title}
+                  /> */}
+                  <Typography variant="h6" style={styles.overlaySubtitle}>
+                      <b>{project.subtitle}</b>
+                  </Typography>
+                  <Typography variant="h3" style={styles.overlayHeader}>
+                      <b>{project.title}</b>
+                  </Typography>
+                  <Typography variant="body1" style={styles.overlayBody}>
+                      {project.description}
+                  </Typography>
+                </div>
+                
+
+
+              :
+                <CardMedia
+                  sx={{ 
+                    height: 250
+                  }}
+                  image={project.image}
+                  title={project.title}
+                />
+            }
             </CardActionArea>
           </Card>
         ))}
@@ -79,8 +147,9 @@ export default function Projects() {
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             These are projects that I have completed during hackathons, classes, 
-            and personal projects. They helped me learn new languages and tone previously 
-            existing skills. Click on them to access the project! Find other projects
+            and personal projects. They helped me learn new languages and hone previously 
+            existing skills. Hover over them for more information about the languages used. 
+            <br></br><b><i>Click</i></b> on them to access the project and find other projects
             on my GitHub!
           </p>
         </div>
@@ -88,34 +157,6 @@ export default function Projects() {
         <div>
           {projectList}
         </div>
-
-          {/* <div className="grid grid-cols-2 gap-6">
-            {projects.map((project) => (
-              <a 
-                href={project.link}
-                key={project.image}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="w-full h-full py-4 px-2">
-                <div className="flex relative hover:animate-pulse-slow">
-                  <img
-                    alt="gallery"
-                    className="absolute inset-0 w-full h-full rounded-2xl object-cover object-center border-4 border-white"
-                    src={project.image}
-                  />
-                  <div className="px-8 py-10 relative z-0 w-full rounded-2xl border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                    <h2 className="tracking-widest text-sm title-font font-medium text-orange-700 mb-1">
-                      {project.subtitle}
-                    </h2>
-                    <h1 className="title-font text-lg font-medium text-white mb-3">
-                      {project.title}
-                    </h1>
-                    <p className="leading-relaxed">{project.description}</p>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div> */}
       </div>
     </section>
   );
