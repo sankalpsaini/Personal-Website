@@ -38,7 +38,6 @@ export default function Projects() {
       top: '50px',
       left: '20px',
       color: 'white',
-      textAlign: 'right',
     },
     overlaySubtitle: {
       position: 'absolute',
@@ -78,10 +77,6 @@ export default function Projects() {
                     title={project.title}
                     className="filter opacity-75 brightness-0"
                   />
-                  {/* <CardHeader
-                    style={styles.overlayHeader}
-                    title={project.title}
-                  /> */}
                   <Typography variant="h6" style={styles.overlaySubtitle}>
                       <b>{project.subtitle}</b>
                   </Typography>

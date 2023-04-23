@@ -75,7 +75,7 @@ export const volunteering = [
     title: "Ada's Team",
     subtitle: "Current",
     description:
-      "Tutor for introductory CS classes",
+      "Tutor for introductory Computer Science classes for the student group, Ada's Team",
     image: "./adasteam.png",
     link: "https://adasteam.ca/",
   },
@@ -83,7 +83,7 @@ export const volunteering = [
     title: "Solar Alberta",
     subtitle: "Current",
     description:
-      "General Volunteer: Social Media Posts and Emails",
+      "General Volunteer for Solar Alberta; assisting with social media posts and member emails",
     image: "./solaralberta.png",
     link: "https://solaralberta.ca/join-us/volunteers/#:~:text=Our%20volunteer%20opportunities%20consist%20of,the%20Solar%20Alberta%20online%20store",
   },
@@ -91,7 +91,7 @@ export const volunteering = [
       title: "Student's Union",
       subtitle: "2019/2021",
       description:
-        "UAlberta Week of Welcome Faculty Leader",
+        "Faculty Leader for the University of Alberta's Students Union. Provided tours for new students and assisted with Week of Welcome events",
       image: "./uasu.png",
       
       link: "https://www.su.ualberta.ca/events/wow/",
@@ -100,7 +100,7 @@ export const volunteering = [
     title: "FIRST Robotics",
     subtitle: "Jan 2019",
     description:
-      "Lego Robotics Competition Setup/Takedown",    
+      "General Volunteer for FIRST Lego Robotics Competition. Assisted in ushering, set-up, and take-down for youth competition",    
     image: "./firstrobotics.png",
     link: "https://www.firstinspires.org/robotics/fll",
   },

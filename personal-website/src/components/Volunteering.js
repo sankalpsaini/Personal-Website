@@ -1,6 +1,6 @@
 // src/components/About.js
 
-import React from "react";
+import React, {useState} from "react";
 
 import { volunteering } from "../data";
 import ScreenDetection from "../tools/screenDetection";
@@ -12,37 +12,94 @@ import { GlobeAltIcon } from "@heroicons/react/solid";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
+import Typography from "@mui/material/Typography";
 import { CardActionArea } from '@mui/material';
 
 var Carousel = require('react-responsive-carousel').Carousel;
 
 export default function Volunteering() {
 
+    const [isHoveredId, setIsHoveredId] = useState( '' );
     let volunteerList;
+
+    function handleMouseOver( ID ) {
+      return () => {
+        setIsHoveredId( ID );
+      }
+    }
+  
+    function handleMouseOut() {
+      setIsHoveredId( '' );
+    }
+
+    const styles = {
+      overlayHeader: {
+        position: 'absolute',
+        top: '50px',
+        left: '20px',
+        color: 'white',
+      },
+      overlaySubtitle: {
+        position: 'absolute',
+        top: '20px',
+        left: '20px',
+        color: '#c2410c',
+      },
+      overlayBody: {
+        position: 'absolute',
+        top: '120px',
+        left: '20px',
+        right: '20px',
+        color: '#a8a29e',
+      }
+    }
 
     if (ScreenDetection() === false) {
         volunteerList =
-        // <div className="flex flex-wrap -m-4">
         <div className="grid grid-cols-3 gap-6 pt-10">
             {volunteering.map((volunteer) => (
               <Card sx={{ width: 1, height: 250, borderRadius: '20px' }}>
-                <CardActionArea>
-                  <CardMedia
-                    sx={{ 
-                      height: 250,
-                      ':hover': {
-                        borderRadius: "20px", // theme.shadows[20]
-                      },
-                    }}
-                    image={volunteer.image}
-                    title={volunteer.title}
-                  />
+                <CardActionArea
+                  onMouseOver={ handleMouseOver(volunteer.title) }
+                  onMouseOut={ handleMouseOut }
+                  href={volunteer.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  { isHoveredId === volunteer.title ?
+                    <div>
+                      <CardMedia
+                        sx={{ 
+                          height: 250,
+                        }}
+                        image={volunteer.image}
+                        title={volunteer.title}
+                        className="filter opacity-75 brightness-0"
+                      />
+                      <Typography variant="h6" style={styles.overlaySubtitle}>
+                        <b>{volunteer.subtitle}</b>
+                      </Typography>
+                      <Typography variant="h4" style={styles.overlayHeader}>
+                        <b>{volunteer.title}</b>
+                      </Typography>
+                      <Typography variant="body1" style={styles.overlayBody}>
+                        {volunteer.description}
+                      </Typography>`
+                    </div>
+                  :
+                    <CardMedia
+                      sx={{ 
+                        height: 250,
+                      }}
+                      image={volunteer.image}
+                      title={volunteer.title}
+                    />
+                  }
                 </CardActionArea>
               </Card>
             ))}
         </div>
       } else {
-        console.log("MOBILE HERE")
         volunteerList = 
           <div className="pt-10">
             <Carousel 
