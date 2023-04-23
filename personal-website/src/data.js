@@ -4,10 +4,10 @@
 
 export const projects = [
     {
-      title: "SitDown - Hack the North",
+      title: "SitDown",
       subtitle: "Flutter/Firebase",
       description:
-        "COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing",
+        "This was a Hack the North project! A COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing",
       image: "./sitDown.png",
       link: "https://devpost.com/software/sitdown-hbjvmp",
     },
@@ -45,20 +45,28 @@ export const projects = [
     //   link: "https://github.com/sankalpsaini/Gmail-Notification-Scraper"
     // },
     {
-      title: "Coda Connection - Hack the North",
+      title: "Coda Connection",
       subtitle: "Coda Document",
       description:
-        "A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'",
+        "This was a Hack the North project! A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'",
       image: "./coda.png",
       link: "https://devpost.com/software/connection-ya2mb7"
     },
     {
-      title: "Gleanr - Morgan Stanley Code to Give",
+      title: "Gleanr",
       subtitle: "React/Next.js/mongoDB",
       description:
-        "Second place winning web application that offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
+        "This was a Morgan Stanley Code to Give winning project! Offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
       image: "./gleanrlogo.png",
       link: "https://github.com/rajagoat/earth-day-c2g"
+    },
+    {
+      title: "Social Distribution",
+      subtitle: "React/Django REST/PostGreSQL",
+      description:
+        "A CMPUT404 project that was essentially a social networking site where users could make accounts and posts allowing other users/servers to view/interact",
+      image: "./socialDist.png",
+      link: "https://github.com/kbricker8/cmput404-group-project"
     }
   ];
 
@@ -67,7 +75,7 @@ export const volunteering = [
     title: "Ada's Team",
     subtitle: "Current",
     description:
-      "Tutor for introductory CS classes",
+      "Tutor for introductory Computer Science classes for the student group, Ada's Team",
     image: "./adasteam.png",
     link: "https://adasteam.ca/",
   },
@@ -75,7 +83,7 @@ export const volunteering = [
     title: "Solar Alberta",
     subtitle: "Current",
     description:
-      "General Volunteer: Social Media Posts and Emails",
+      "General Volunteer for Solar Alberta; assisting with social media posts and member emails",
     image: "./solaralberta.png",
     link: "https://solaralberta.ca/join-us/volunteers/#:~:text=Our%20volunteer%20opportunities%20consist%20of,the%20Solar%20Alberta%20online%20store",
   },
@@ -83,8 +91,8 @@ export const volunteering = [
       title: "Student's Union",
       subtitle: "2019/2021",
       description:
-        "UAlberta Week of Welcome Faculty Leader",
-      image: "./uasu.jpg",
+        "Faculty Leader for the University of Alberta's Students Union. Provided tours for new students and assisted with Week of Welcome events",
+      image: "./uasu.png",
       
       link: "https://www.su.ualberta.ca/events/wow/",
     },
@@ -92,7 +100,7 @@ export const volunteering = [
     title: "FIRST Robotics",
     subtitle: "Jan 2019",
     description:
-      "Lego Robotics Competition Setup/Takedown",    
+      "General Volunteer for FIRST Lego Robotics Competition. Assisted in ushering, set-up, and take-down for youth competition",    
     image: "./firstrobotics.png",
     link: "https://www.firstinspires.org/robotics/fll",
   },

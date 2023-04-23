@@ -9,7 +9,7 @@ import "animate.css/animate.min.css";
 export default function Skills() {
   return (
     <section id="skills" className="text-gray-400 bg-background_main body-font">
-      <div className="container px-5 py-20 mx-auto">
+      <div className="container px-5 pb-20 mx-auto">
         <div className="text-center mb-20">
           <AnimationOnScroll initiallyVisible={false} animateIn={"animate__flip"}>
             <ChipIcon className="w-10 inline-block mb-4" />

@@ -5,7 +5,7 @@ This is my own personal portfolio website that I am creating in React.
 <br><br>Upcoming Features: Shell/Python Console to allow the running of personal scripts, web gaming application
 
 ## Languages/Frameworks Used
-- React (router, animation-on-scroll, scroll, typewriter-effect, social-icons)
+- React (router, animation-on-scroll, scroll, typewriter-effect, social-icons, material-ui)
 - Tailwind CSS
 - Trinket.io
 
@@ -14,6 +14,7 @@ This is my own personal portfolio website that I am creating in React.
 - Portfolio Image: https://www.kindpng.com/imgv/ioRhbmb_marketing-clipart-investment-portfolio-portfolio-management-png-free/
 - Laptop Coding icon: https://icons8.com
 - Icons: https://heroicons.com/
+- Card Overlay: https://stackoverflow.com/questions/51294471/mui-card-text-overlay
 
 ## To run on development server
 - `cd personal-website`

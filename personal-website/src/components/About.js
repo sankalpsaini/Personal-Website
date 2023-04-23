@@ -1,14 +1,33 @@
 // src/components/About.js
 
 import {React} from "react";
+
+import ScreenDetection from "../tools/screenDetection";
+
 import TypeWriterEffect from 'react-typewriter-effect';
+import Alert from '@mui/material/Alert';
 
 
 export default function About() {
+
+    let mobileMessage;
+
+    if (ScreenDetection() === true) {
+        mobileMessage =
+        <div>
+            <Alert severity="info">This would look a lot better on a Desktop.<br></br><br></br>It'll give you access to my script compiler page!</Alert>
+            <br></br>
+        </div>
+    } else {
+        mobileMessage =
+        <br></br>
+    }
+
     return (
         <section id="about">
-           <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+           <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    {mobileMessage}
                     <TypeWriterEffect
                         textStyle={{ fontFamily: 'American Typewriter, serif', color: 'black', fontSize: "35px" }}
                         startDelay={100}

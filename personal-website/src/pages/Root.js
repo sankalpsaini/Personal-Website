@@ -1,6 +1,6 @@
-import { Outlet, Link } from "react-router-dom";
-import { Route, Router, Routes } from "react-router";
-import Navbar from "../components/Navbar";
+// import { Outlet, Link } from "react-router-dom";
+import { Route, Routes } from "react-router";
+// import Navbar from "../components/Navbar";
 
 import App from "../App";
 import Compiler from "./Compiler";
