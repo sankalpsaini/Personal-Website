@@ -20,30 +20,38 @@ export const projects = [
       link: "https://github.com/CMPUT301W22T28/QRGo",
     },
     {
-        title: "AlbertaSat",
-        subtitle: "React/Python",
-        description:
-          "Member of the Ground Station Software Team with contributions on a web-based application. Also created, and published blog posts",
-        image: "./albertaSat.png",
-        
-        link: "https://albertasat.ca",
-      },
-    {
-      title: "Portfolio Website",
-      subtitle: "HTML/CSS/ReactJS",
+      title: "Gleanr",
+      subtitle: "React/Next.js/mongoDB",
       description:
-        "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume",
-      image: "./portfolio-clipart.png",
-      link: "https://github.com/sankalpsaini/Personal-Website",
+        "This was a Morgan Stanley Code to Give winning project! Offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
+      image: "./gleanrlogo.png",
+      link: "https://github.com/rajagoat/earth-day-c2g"
     },
-    // {
-    //   title: "Gmail Scraper",
-    //   subtitle: "Python",
-    //   description:
-    //     "Simple application that allows users to check number of unread emails. Ideal for people that would not like to continuously open work/school email accounts",
-    //   image: "./gmail.png",
-    //   link: "https://github.com/sankalpsaini/Gmail-Notification-Scraper"
-    // },
+    {
+      title: "Car-cation",
+      subtitle: "Python",
+      description:
+        "A travel calculation app that determines the estimated cost of your roadtrip based on inputted variables (start/end cities, gas cost, duration, food, hotel)",
+      image: "./carcation.png",
+      link: "https://mecsimcalc.com/app/6751833/car_cation"
+    },
+    {
+      title: "Social Distribution",
+      subtitle: "React/Django REST/PostGreSQL",
+      description:
+        "A CMPUT404 project that was essentially a social networking site where users could make accounts and posts allowing other users/servers to view/interact",
+      image: "./socialDist.png",
+      link: "https://github.com/kbricker8/cmput404-group-project"
+    },
+    {
+      title: "AlbertaSat",
+      subtitle: "React/Python",
+      description:
+        "Member of the Ground Station Software Team with contributions on a web-based application. Also created, and published blog posts",
+      image: "./albertaSat.png",
+      
+      link: "https://albertasat.ca",
+    },
     {
       title: "Coda Connection",
       subtitle: "Coda Document",
@@ -53,21 +61,13 @@ export const projects = [
       link: "https://devpost.com/software/connection-ya2mb7"
     },
     {
-      title: "Gleanr",
-      subtitle: "React/Next.js/mongoDB",
+      title: "Portfolio Website",
+      subtitle: "HTML/CSS/ReactJS",
       description:
-        "This was a Morgan Stanley Code to Give winning project! Offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
-      image: "./gleanrlogo.png",
-      link: "https://github.com/rajagoat/earth-day-c2g"
+        "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume",
+      image: "./portfolio-clipart.png",
+      link: "https://github.com/sankalpsaini/Personal-Website",
     },
-    {
-      title: "Social Distribution",
-      subtitle: "React/Django REST/PostGreSQL",
-      description:
-        "A CMPUT404 project that was essentially a social networking site where users could make accounts and posts allowing other users/servers to view/interact",
-      image: "./socialDist.png",
-      link: "https://github.com/kbricker8/cmput404-group-project"
-    }
   ];
 
 export const volunteering = [
