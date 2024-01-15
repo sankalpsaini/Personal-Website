@@ -50,10 +50,7 @@ export default function About() {
                         of computer science and hope to add much more to my personal knowledge with my experiences to come.
                     </p> */}
                     <p className="mb-8 leading-relaxed text-gray-350">
-                        Welcome to my personal portfolio!
-                        <br></br> 
-                        <br></br>
-                        In terms of work experience, I have worked two internships as a Software Development Intern at 
+                        A little about my professional experience, I have worked two internships as a Software Engineering Intern at 
                         <a 
                             href="https://www.munisoft.ca/home" 
                             rel="noopener noreferrer" 
@@ -62,7 +59,7 @@ export default function About() {
                         ><strong> MuniSoft </strong></a>
                         (Regina, SK), 
                         a financial technology software company. This position 
-                        gave me 8 months of professional, industry experience! In addition to this, I am currently 
+                        gave me 8 months of professional, industry experience! In addition to this, I had the privilege of 
                         working my third internship at 
                         <a 
                             href="https://www.canada.ca/en/shared-services.html" 
@@ -70,16 +67,19 @@ export default function About() {
                             target="_blank" 
                             className="text-gray-600 hover:text-orange-700"
                         ><strong> Shared Services Canada </strong></a>
-                        (Edmonton, AB) as a Systems Analyst Intern for 16 months. 
+                        (Edmonton, AB) as a Systems Analyst Intern for 16 months and have been working part-time for them during school. 
+                        Also during school, I was selected to become an undergraduate teaching assistant for CMPUT 301 - Introduction for Software 
+                        Engineering. During this position, I had responsibilities to mark undergraduate labs and projects, provide online and hands-on 
+                        assistance, and become a 'mentor' for large group projects.
                         <br></br>
                         <br></br>
                         Other than industry experience, I have worked on many projects during classes, hackathons, and in my free time, 
                         in which I have led my teams to success. My greatest accomplishments have come from taking charge and putting in 
-                        long hours to get the project done. I have used a variety of languages and gained exceptional experience in 
-                        mobile/web development, machine learning, and design!
+                        long hours to get the project done at a standard that I am proud of. I have used a variety of languages and gained 
+                        exceptional experience in mobile/web development, machine learning, and design!
                    </p>
                     <div className="flex justify-center">
-                        <a href="https://drive.google.com/file/d/1YGfvWsDh_PRq-_wnwpl26TDXQeDcWXf4/view?usp=sharing" rel="noopener"
+                        <a href="https://drive.google.com/file/d/1iYxoyPr2p7KFBoiS5kt3nh5t3puvKtTN/view?usp=sharing" target="_blank" rel="noreferrer"
                             className="hover:animate-pulse-slow inline-flex text-white bg-orange-700 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
                             Check out my Resume
                         </a>

@@ -4,42 +4,58 @@
 
 export const projects = [
     {
-      title: "SitDown",
-      subtitle: "Flutter/Firebase",
+      title: "Palette Pioneer",
+      subtitle: "React/express.js",
       description:
-        "This was a Hack the North project! A COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing",
-      image: "./sitDown.png",
-      link: "https://devpost.com/software/sitdown-hbjvmp",
-    },
-    {
-      title: "QRGo",
-      subtitle: "Java",
-      description:
-        "Android Application created in CMPUT 301. Users navigate their way to QRCodes and scan them to score points and compete with other players",
-      image: "./qrgo.png",
-      link: "https://github.com/CMPUT301W22T28/QRGo",
+        "This was a HackED 2024 hackathon project! Acts as a tool for developers and designers to create color palettes randomly or using AI models. Models can generate by text or related hex color!",
+      image: "./palette-pioneer.png",
+      link: "https://devpost.com/software/palette-pioneer"
     },
     {
       title: "Gleanr",
       subtitle: "React/Next.js/mongoDB",
       description:
-        "This was a Morgan Stanley Code to Give winning project! Offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'",
+        "This was a Morgan Stanley Code to Give winning project! Offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'.",
       image: "./gleanrlogo.png",
       link: "https://github.com/rajagoat/earth-day-c2g"
+    },
+    {
+      title: "ConnecTech",
+      subtitle: "Instagram/Canva",
+      description:
+        "Upon noticing a gap undergraduate computing science students being aware of events/conferences, I decided to create a platform where I could share opportunities so students can make the most of their degrees.",
+      image: "./connectech.png",
+      link: "https://www.instagram.com/connectechcanada/",
+    },
+    {
+      title: "QRGo",
+      subtitle: "Java",
+      description:
+        "Android Application created in CMPUT 301. Users navigate their way to QRCodes and scan them to score points and compete with other players.",
+      image: "./qrgo.png",
+      link: "https://github.com/CMPUT301W22T28/QRGo",
     },
     {
       title: "Car-cation",
       subtitle: "Python",
       description:
-        "A travel calculation app that determines the estimated cost of your roadtrip based on inputted variables (start/end cities, gas cost, duration, food, hotel)",
+        "A travel calculation app that determines the estimated cost of your roadtrip based on inputted variables (start/end cities, gas cost, duration, food, hotel).",
       image: "./carcation.png",
       link: "https://mecsimcalc.com/app/6751833/car_cation"
     },
     {
-      title: "Social Distribution",
-      subtitle: "React/Django REST/PostGreSQL",
+      title: "SitDown",
+      subtitle: "Flutter/Firebase",
       description:
-        "A CMPUT404 project that was essentially a social networking site where users could make accounts and posts allowing other users/servers to view/interact",
+        "This was a Hack the North project! A COVID-19 Hybrid Workplace Companion Application. Lets employees book clean tables/spaces to allow for ample cleaning and social distancing.",
+      image: "./sitDown.png",
+      link: "https://devpost.com/software/sitdown-hbjvmp",
+    },
+    {
+      title: "Social Distribution",
+      subtitle: "React/Django/REST APIs/PostGreSQL",
+      description:
+        "A CMPUT404 project that was essentially a social networking site where users could make accounts and posts allowing other users/servers to view/interact.",
       image: "./socialDist.png",
       link: "https://github.com/kbricker8/cmput404-group-project"
     },
@@ -47,7 +63,7 @@ export const projects = [
       title: "AlbertaSat",
       subtitle: "React/Python",
       description:
-        "Member of the Ground Station Software Team with contributions on a web-based application. Also created, and published blog posts",
+        "Member of the Ground Station Software Team with contributions on a web-based application. Also created, and published blog posts.",
       image: "./albertaSat.png",
       
       link: "https://albertasat.ca",
@@ -56,7 +72,7 @@ export const projects = [
       title: "Coda Connection",
       subtitle: "Coda Document",
       description:
-        "This was a Hack the North project! A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'",
+        "This was a Hack the North project! A shareable document with automated email reminders for business and casual events, in and out of the workplace. Acts as a 'virtual water cooler'.",
       image: "./coda.png",
       link: "https://devpost.com/software/connection-ya2mb7"
     },
@@ -64,7 +80,7 @@ export const projects = [
       title: "Portfolio Website",
       subtitle: "HTML/CSS/ReactJS",
       description:
-        "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume",
+        "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume.",
       image: "./portfolio-clipart.png",
       link: "https://github.com/sankalpsaini/Personal-Website",
     },
@@ -116,21 +132,24 @@ export const familiarSkills = [
   {
     name: "C/C++"
   },
-  // {
-  //   name: "VisualBasic"
-  // },
   {
     name: "HTML/CSS/Javascript"
   },
   {
-    name: "React"
+    name: "React.js"
   },
   {
     name: "Linux/Ubuntu"
   },
-  // {
-  //   name: "GitHub/GitLab"
-  // },
+  {
+    name: "REST APIs"
+  },
+  {
+    name: "SQL/SQLite"
+  },
+  {
+    name: "GitHub/GitLab"
+  },
 ];
 
 export const learningSkills = [
