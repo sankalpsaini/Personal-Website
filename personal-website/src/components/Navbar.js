@@ -110,7 +110,7 @@ export default function Navbar() {
                 {/* className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center"> */}
                 <SocialIcon 
                     className="cursor-pointer inline-flex items-center py-1 px-3 focus:outline-none text-base mx-1"
-                    url="https://www.instagram.com/s.saini6/" 
+                    url="https://www.instagram.com/_sankalpsaini/" 
                     bgColor="#b45309" 
                     fgColor="2D283E" 
                     style={{ height: 40, width: 40 }}
