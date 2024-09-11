@@ -4,12 +4,12 @@
 
 export const projects = [
     {
-      title: "Palette Pioneer",
-      subtitle: "React/express.js",
+      title: "Prophecy",
+      subtitle: "React/Python/Flask",
       description:
-        "This was a HackED 2024 hackathon project! Acts as a tool for developers and designers to create color palettes randomly or using AI models. Models can generate by text or related hex color!",
-      image: "./palette-pioneer.png",
-      link: "https://devpost.com/software/palette-pioneer"
+        "Co-Founder of Prophecy, a platform that makes investing accessible to everyone. We are building a web app to educate and empower all types of users to take control of their investing.",
+      image: "./prophecy.png",
+      link: "https://www.prophecyfinance.ca/"
     },
     {
       title: "Gleanr",
@@ -18,6 +18,14 @@ export const projects = [
         "This was a Morgan Stanley Code to Give winning project! Offers communication between farmers, volunteers, and foodbanks to encourage the process of 'gleaning'.",
       image: "./gleanrlogo.png",
       link: "https://github.com/rajagoat/earth-day-c2g"
+    },
+    {
+      title: "Palette Pioneer",
+      subtitle: "React/express.js",
+      description:
+        "This was a HackED 2024 hackathon project! Acts as a tool for developers and designers to create color palettes randomly or using AI models. Models can generate by text or related hex color!",
+      image: "./palette-pioneer.png",
+      link: "https://devpost.com/software/palette-pioneer"
     },
     {
       title: "ConnecTech",
@@ -34,6 +42,14 @@ export const projects = [
         "Android Application created in CMPUT 301. Users navigate their way to QRCodes and scan them to score points and compete with other players.",
       image: "./qrgo.png",
       link: "https://github.com/CMPUT301W22T28/QRGo",
+    },
+    {
+      title: "OlympicOracle",
+      subtitle: "Python/React",
+      description:
+        "A hackathon project that predicts the outcome of the Olympics! Uses machine learning models to predict which country will win a specific medal in a specific sport.",
+      image: "./olympicoracle.png",
+      link: "https://github.com/n33lp/OlympicOracle-codedex"
     },
     {
       title: "Car-cation",
@@ -59,15 +75,15 @@ export const projects = [
       image: "./socialDist.png",
       link: "https://github.com/kbricker8/cmput404-group-project"
     },
-    {
-      title: "AlbertaSat",
-      subtitle: "React/Python",
-      description:
-        "Member of the Ground Station Software Team with contributions on a web-based application. Also created, and published blog posts.",
-      image: "./albertaSat.png",
+    // {
+    //   title: "AlbertaSat",
+    //   subtitle: "React/Python",
+    //   description:
+    //     "Member of the Ground Station Software Team with contributions on a web-based application. Also created, and published blog posts.",
+    //   image: "./albertaSat.png",
       
-      link: "https://albertasat.ca",
-    },
+    //   link: "https://albertasat.ca",
+    // },
     {
       title: "Coda Connection",
       subtitle: "Coda Document",
@@ -76,24 +92,24 @@ export const projects = [
       image: "./coda.png",
       link: "https://devpost.com/software/connection-ya2mb7"
     },
-    {
-      title: "Portfolio Website",
-      subtitle: "HTML/CSS/ReactJS",
-      description:
-        "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume.",
-      image: "./portfolio-clipart.png",
-      link: "https://github.com/sankalpsaini/Personal-Website",
-    },
+    // {
+    //   title: "Portfolio Website",
+    //   subtitle: "HTML/CSS/ReactJS",
+    //   description:
+    //     "This is the website you're currently on! Used to display additional projects and experience that do not fit on my professional resume.",
+    //   image: "./portfolio-clipart.png",
+    //   link: "https://github.com/sankalpsaini/Personal-Website",
+    // },
   ];
 
 export const volunteering = [
   {
-    title: "Ada's Team",
+    title: "NeurAlbertaTech",
     subtitle: "Current",
     description:
-      "Tutor for introductory Computer Science classes for the student group, Ada's Team",
-    image: "./adasteam.png",
-    link: "https://adasteam.ca/",
+      "Software Associate for NeurAlbertaTech; working on the development of a web application for the organization",
+    image: "./neuralbertatech_cover.webp",
+    link: "https://neuralberta.tech/",
   },
   {
     title: "Solar Alberta",
@@ -102,6 +118,14 @@ export const volunteering = [
       "General Volunteer for Solar Alberta; assisting with social media posts and member emails",
     image: "./solaralberta.png",
     link: "https://solaralberta.ca/join-us/volunteers/#:~:text=Our%20volunteer%20opportunities%20consist%20of,the%20Solar%20Alberta%20online%20store",
+  },
+  {
+    title: "Ada's Team",
+    subtitle: "2022-2024",
+    description:
+      "Tutor for introductory Computer Science classes for the student group, Ada's Team",
+    image: "./adasteam.png",
+    link: "https://adasteam.ca/",
   },
   {
       title: "Student's Union",
@@ -133,10 +157,10 @@ export const familiarSkills = [
     name: "C/C++"
   },
   {
-    name: "HTML/CSS/Javascript"
+    name: "HTML/CSS"
   },
   {
-    name: "React.js"
+    name: "Javascript/React.js"
   },
   {
     name: "Linux/Ubuntu"
@@ -150,11 +174,20 @@ export const familiarSkills = [
   {
     name: "GitHub/GitLab"
   },
+  {
+    name: "Shell/Bash"
+  },
+  {
+    name: "Next.js/Express.js"
+  },
+  {
+    name: "Jupyter/Julia Notebooks"
+  },
 ];
 
 export const learningSkills = [
   {
-    name: "PHP"
+    name: "TensorFlow/PyTorch"
   },
   {
     name: "Swift"
