@@ -18,14 +18,14 @@ export default function Navbar() {
     console.log("LOCATION: " + locationDetection());
 
     if (locationDetection() === "home") {
-        if (ScreenDetection() === false) {
-            mobileCompilerAddition =
-                <NavLink
-                    to="/compiler"
-                    className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
-                        Script Compiler
-                </NavLink>
-        }
+        // if (ScreenDetection() === false) {
+        //     mobileCompilerAddition =
+        //         <NavLink
+        //             to="/compiler"
+        //             className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+        //                 Script Compiler
+        //         </NavLink>
+        // }
         titleLink = 
             <nav className="title-font font-medium text-white mb-4 md:mb-0">
                 <Link
@@ -67,7 +67,11 @@ export default function Navbar() {
 
                 Skills
             </Link>
-            {mobileCompilerAddition}
+            <NavLink
+                to="/photography"
+                className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
+                    Photography
+            </NavLink>
         </nav>
 
     }
@@ -90,9 +94,9 @@ export default function Navbar() {
                 Home
             </NavLink>
             <NavLink
-                to="/compiler"
+                to="/photography"
                 className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-orange-900 rounded text-base mt-4 md:mt-0">
-                    Script Compiler
+                    Photography
             </NavLink>
         </nav>
     }

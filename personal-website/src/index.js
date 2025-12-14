@@ -8,8 +8,9 @@ import {
 import './index.css';
 import Root from './pages/Root';
 import App from './App';
-import Compiler from './pages/Compiler';
 import reportWebVitals from './reportWebVitals';
+import Photography from './pages/Photography';
+//import Compiler from './pages/Compiler';
 
 const router = createBrowserRouter([
   {
@@ -20,9 +21,13 @@ const router = createBrowserRouter([
         path: `/`,
         element: <App />,
       },
+      // {
+      //   path: `/compiler`,
+      //   element: <Compiler />,
+      // },
       {
-        path: `/compiler`,
-        element: <Compiler />,
+        path: `/photography`,
+        element: <Photography />,
       },
     ]
   },
