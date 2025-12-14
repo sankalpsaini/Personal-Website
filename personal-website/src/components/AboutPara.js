@@ -11,7 +11,7 @@ export default function AboutPara() {
     if (ScreenDetection() === true) {
         mobileMessage =
         <div>
-            <Alert severity="info">This would look a lot better on a Desktop.<br></br><br></br>It'll give you access to my script compiler page!</Alert>
+            <Alert severity="info">This would look a lot better on a Desktop.</Alert>
             <br></br>
         </div>
     }

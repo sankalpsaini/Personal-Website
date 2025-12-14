@@ -217,3 +217,54 @@ export const softSkills = [
     name: "Time Management"
   },
 ]
+
+export const photography = [
+  {
+    title: "British Museum",
+    image: "/photography/british-museum-library.jpeg",
+    location: "London, UK",
+    date: "October 2025",
+  },
+  {
+    title: "Amsterdam Canal",
+    image: "/photography/amsterdam-canal.jpeg",
+    location: "Amsterdam, NL",
+    date: "October 2025",
+  },  
+  {
+    title: "The University of Oxford",
+    image: "/photography/oxford.jpeg",
+    location: "Oxford, UK",
+    date: "October 2025",
+  },
+  {
+    title: "North Vancouver Sunset",
+    image: "/photography/north-van-sunset.jpeg",
+    location: "North Vancouver, BC",
+    date: "February 2025",
+  },
+  {
+    title: "Lake Louise",
+    image: "/photography/lake-louise.jpeg",
+    location: "Lake Louise, AB",
+    date: "Summer 2024",
+  },
+  {
+    title: "Rockies",
+    image: "/photography/icefields-parkway.jpeg",
+    location: "Icefields Parkway, AB",
+    date: "Summer 2024",
+  },
+  {
+    title: "Varadero Beach",
+    image: "/photography/varadero-beach.jpeg",
+    location: "Varadero, Cuba",
+    date: "May 2024",
+  },
+  {
+    title: "Winter in the River Valley",
+    image: "/photography/edmonton-bridge.jpeg",
+    location: "Edmonton, AB",
+    date: "March 2019",
+  },
+]
