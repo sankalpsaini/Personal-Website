@@ -267,4 +267,28 @@ export const photography = [
     location: "Edmonton, AB",
     date: "March 2019",
   },
-]
+
+  {
+    title: "London Bridge",
+    image: "/photography/london-bridge.jpeg",
+    location: "London, UK",
+    date: "September, 2025",
+  },
+  {
+    title: "David Lam Cherry Blossoms",
+    image: "/photography/vancouver-cherry-blossoms.jpeg",
+    location: "Vancouver, BC",
+    date: "April, 2025",
+  },
+  {
+    title: "Celebration of Light",
+    image: "/photography/festival-of-lights.jpeg",
+    location: "Vancouver, BC",
+    date: "July, 2025",
+  },
+  {
+    title: "Bacharach Station",
+    image: "/photography/bacharach-sign.jpeg",
+    location: "Bacharach, Germany",
+    date: "October, 2025",
+  },]
